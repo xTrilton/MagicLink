@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:text="MagicLink"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter your phone number"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="enter your email address"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:id="@+id/smsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS authentication"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:onClick="smsAuthtentication"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/emailbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email authentication"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="50dp"
+        android:onClick="emailAuthentication"/>
+</LinearLayout>
